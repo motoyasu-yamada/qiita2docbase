@@ -89,7 +89,7 @@ Dir.glob('articles/*') do |item|
     title = article['title']
     qiita_url = article['url']
     qiitaUid = article['user']['id']
-    group = article['group']['name']
+    group = article['group']['name'] if article['group']
     docbaseUid = USER_IDS[qiitaUid] || USER_ETC
    
     body = article['body']
