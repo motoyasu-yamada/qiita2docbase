@@ -29,8 +29,9 @@
 ```ruby main.rb```
 
 # ディレクトリ構成
-README.md
-main.rb
-articles/
-credentials.json
-imported.json
+
+- README.md
+- main.rb
+- articles/
+- credentials.json
+- imported.json
