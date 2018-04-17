@@ -3,10 +3,12 @@
 ## 記事をダウンロードして articles ディレクトリをここに置く
 ## 下記の設定ファイルを手で作成
 
+### 読み込み済みリストの管理: importes.json
 ```json:importes.json
 {}
 ```
 
+### アクセストークンなど個別の設定情報: credentials.json
 ```json:credentials.json
 {
   "COOKIE_STR": "Qiita-Teamにログイン済みのクッキー",
