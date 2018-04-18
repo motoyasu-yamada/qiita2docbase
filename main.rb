@@ -138,12 +138,16 @@ Dir.glob('articles/*') do |item|
 
   end
 
-  imported_articles[item] = {
-    "qiita" => qiita_url,
-    "docbase" => created_post['url']
-  }
-
-  open(IMPORTED, 'w') do |io|
-    JSON.dump(imported_articles, io)
+  if created_post
+    imported_articles[item] = {
+      "qiita" => qiita_url,
+      "docbase" => created_post['url']
+    }
+    open(IMPORTED, 'w') do |io|
+      JSON.dump(imported_articles, io)
+    end
+  else
+    puts "\n\n***** Error skipped #{item}\n\n"
   end
+
 end
