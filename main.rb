@@ -22,7 +22,7 @@ TEAM_DOMAIN = credentials['TEAM_DOMAIN']
 GROUP_ID = credentials['GROUP_ID']
 USER_IDS = credentials['USER_IDS']
 USER_ETC = credentials['USER_ETC']
-QIITA_TEAM = credentials['credentials']
+QIITA_TEAM = credentials['QIITA_TEAM']
 
 BASE_URL       = URI.parse('https://api.docbase.io')
 REQUEST_HEADER = {'X-DocBaseToken' => ACCESS_TOKEN, 'X-Api-Version' => 1, 'Content-Type' => 'application/json'}
